@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    --scrollColor: hsl(0,0%,67%);
+    overflow-x: hidden;
+}
+body{
+    background-color: #0F0F0F;
+    height: 100%;
+    width: 100%;
+    color: white;
+    overflow:scroll;
+    --scrollColor: none;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+body:hover{
+    --scrollColor: hsl(0,0%,67%);;
+}
+div{
+    display: inline-block;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: none;
+}
+::-webkit-scrollbar-thumb{
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--scrollColor);
+}
+.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    margin: 0 24px 0 0;
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+.img{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    margin: 0 24px 0 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.itembox{
+    width: 216px;
+    padding-bottom: 12px;
+    margin: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 180px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+.item:hover{background-color: #272727}
+.text{
+    font-size: 14px;
+}
+.title{
+    font-size: 16px;
+}
